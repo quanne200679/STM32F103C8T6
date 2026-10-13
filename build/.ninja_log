@@ -1,0 +1,27 @@
+# ninja log v7
+69	1124	8135956967733300	CMakeFiles/Lab01_LCD.dir/startup_stm32f103xb.s.obj	d09962dcbe0931e8
+49	1163	8135956967536193	CMakeFiles/Lab01_LCD.dir/Core/Src/sysmem.c.obj	eef6fbfa31bf1807
+18	1307	8135956967227185	CMakeFiles/Lab01_LCD.dir/Core/Src/main.c.obj	7f2aabdf0234722a
+40	1282	8135956967450564	CMakeFiles/Lab01_LCD.dir/Core/Src/stm32f1xx_hal_msp.c.obj	b7158bd96ea0c6c
+80	1409	8135956967843588	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj	c9089b6f5f86e72a
+27	1350	8135956967313895	CMakeFiles/Lab01_LCD.dir/Core/Src/stm32f1xx_it.c.obj	47b645b98cd80f4f
+102	1324	8135956968088959	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj	cc7f634404a2c553
+92	1338	8135956967964002	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj	ac7da90e9d3a9acf
+115	1414	8135956968195699	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj	82a0960e75a56da7
+59	1250	8135956967640444	CMakeFiles/Lab01_LCD.dir/Core/Src/syscalls.c.obj	879db7b6039170b5
+1132	1702	8135956978445082	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj	97ed6c9feb3fdfaa
+1169	1739	8135956978734335	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj	816bdea851ee969a
+1250	1777	8135956979542953	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj	f63b0c717445597a
+1284	1888	8135956979892039	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj	4ccb7792f1b457ec
+1308	1872	8135956980121409	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj	e0d7646a7db14839
+1324	1873	8135956980281004	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj	9e90e11be9916f3e
+1338	1867	8135956980422915	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj	87140efbf92f7184
+1351	1892	8135956980552564	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj	41cc53fa0af16524
+25	1836	8136012072898191	Lab01_LCD.elf	5a011086d13207e1
+35	361	8136014220950183	build.ninja	88a405f598e94bde
+35	361	8136014220822104	C:/Users/Quan/STM32CubeIDE/workspace_2.1.1/Lab01_LCD/build/cmake_install.cmake	88a405f598e94bde
+35	361	8136014220874519	C:/Users/Quan/STM32CubeIDE/workspace_2.1.1/Lab01_LCD/build/cmake/stm32cubemx/cmake_install.cmake	88a405f598e94bde
+8	152	8136014220950183	build.ninja	88a405f598e94bde
+8	152	8136014220950183	C:/Users/Quan/STM32CubeIDE/workspace_2.1.1/Lab01_LCD/build/cmake_install.cmake	88a405f598e94bde
+8	152	8136014220950183	C:/Users/Quan/STM32CubeIDE/workspace_2.1.1/Lab01_LCD/build/cmake/stm32cubemx/cmake_install.cmake	88a405f598e94bde
+29	284	8136014221593749	Lab01_LCD.elf	ee9a1846f86ead8a

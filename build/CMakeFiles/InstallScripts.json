@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Quan/STM32CubeIDE/workspace_2.1.1/Lab01_LCD/build/cmake_install.cmake",
+		"C:/Users/Quan/STM32CubeIDE/workspace_2.1.1/Lab01_LCD/build/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
