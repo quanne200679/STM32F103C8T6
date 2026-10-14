@@ -27,10 +27,12 @@ typedef struct{
     uint16_t E;
 }LCD;
 
-void LCD_Init(LCD *myLCD);
-void LCD_Write_Byte(LCD *myLCD, uint8_t data, uint8_t mode);
-void LCD_Write_data(LCD *myLCD, uint8_t data);
-void LCD_Write_cmd(LCD *myLCD, uint8_t data);
-void LCD_Print_data(LCD *myLCD, char *str);
+extern LCD mLCD;
+
+void LCD_Init();
+void LCD_Write_Byte(uint8_t data, uint8_t mode);
+void LCD_Write_data(uint8_t data);
+void LCD_Write_cmd(uint8_t data);
+void LCD_Print_data(char *str);
 
 #endif

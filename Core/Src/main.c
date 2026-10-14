@@ -55,7 +55,7 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-  LCD mLCD;
+
 /* USER CODE END 0 */
 
 /**
@@ -101,10 +101,10 @@ int main(void)
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
 
-  LCD_Init(&mLCD);
-  LCD_Print_data(&mLCD,"DIT CON ME MAY");
-  LCD_Write_cmd(&mLCD, 0xC0);
-  LCD_Print_data(&mLCD,"THANG DA DEN!");
+  LCD_Init();
+  LCD_Print_data("Fuck You ");
+  LCD_Write_cmd(0xC0);
+  LCD_Print_data("Nigga Clanker!!");
 
 
   /* USER CODE END 2 */
