@@ -104,7 +104,7 @@ int main(void)
   LCD_Init();
   LCD_Print_data("Fuck You ");
   LCD_Write_cmd(0xC0);
-  LCD_Print_data("Nigga Clanker!!");
+  LCD_Print_data("Fargot!!");
 
 
   /* USER CODE END 2 */
