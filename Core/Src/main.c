@@ -63,6 +63,7 @@ void LCD_Init();
 void LCD_Write_Byte(uint8_t data, uint8_t mode);
 void LCD_Write_data(uint8_t data);
 void LCD_Write_cmd(uint8_t data);
+void LCD_Print_data(char *str);
 
 
 void LCD_Write_Byte(uint8_t data, uint8_t mode){
@@ -110,6 +111,12 @@ void LCD_Init(){
   HAL_Delay(5);
 }
 
+void LCD_Print_data(char *str){
+  while(*str){
+    LCD_Write_data(*str++);
+  }
+
+}
 /* USER CODE END 0 */
 
 /**
@@ -158,6 +165,9 @@ int main(void)
   LCD_Write_data('M');
   LCD_Write_data('A');
   LCD_Write_data('Y');
+  LCD_Write_cmd(0xC0);
+  LCD_Print_data("THANG DA DEN!");
+
 
   /* USER CODE END 2 */
 
