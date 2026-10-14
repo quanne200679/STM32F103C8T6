@@ -144,7 +144,21 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,0);
   LCD_Init();
+  LCD_Write_data('D');
+  LCD_Write_data('I');
+  LCD_Write_data('T');
+  LCD_Write_data(' ');
+  LCD_Write_data('C');
+  LCD_Write_data('O');
+  LCD_Write_data('N');
+  LCD_Write_data(' ');
+  LCD_Write_data('M');
+  LCD_Write_data('E');
+  LCD_Write_data(' ');
+  LCD_Write_data('M');
   LCD_Write_data('A');
+  LCD_Write_data('Y');
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
