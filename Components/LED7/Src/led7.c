@@ -43,7 +43,7 @@ void Init_LED7( GPIO_TypeDef *pa, uint16_t pina,
 
 
 void Display_LED7(uint8_t num){
-    if(num > 9) return;
+    if((0 >= num && num >=9) || ('A' >= num && num >='F')) return;
     uint8_t data;
     switch(num){
         case 'A': 
