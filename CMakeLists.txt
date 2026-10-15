@@ -36,8 +36,10 @@ add_executable(${CMAKE_PROJECT_NAME})
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
-# 1. Thêm thư mục module vào hệ thống build
+#Thêm thư mục module vào hệ thống build
 add_subdirectory(Components/LCD1602)
+#Thêm thư mục module vào hệ thống build
+add_subdirectory(Components/LED7)
 
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
@@ -49,12 +51,14 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     Components/LCD1602/Src/lcd1602.c
+    Components/LED7/Src/led7.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     Components/LCD1602/Inc
+    Components/LED7/Inc
 )
 
 # Add project symbols (macros)
@@ -71,6 +75,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     # Add user defined libraries
     # Link thư viện LCD1602 vào chương trình chính
     LCD1602
+    LED7
 )
 # config to export .hex and .bin
 if(CMAKE_OBJCOPY)
