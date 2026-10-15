@@ -104,10 +104,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   LCD_Init();
-  LCD_Print_data("Fuck You ");
-  LCD_Write_cmd(0xC0);
-  LCD_Print_data("Fargot!!");
-
+  LCD_Print_data("HELLO HELLO =))");
+  HAL_Delay(100); 
+  LCD_Write_cmd(0x01); // Xóa chữ HELLO đi rồi mới vào while(1)
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, 1);
   Init_LED7(GPIOA, GPIO_PIN_8,
             GPIOA, GPIO_PIN_9,
@@ -119,8 +118,8 @@ int main(void)
             GPIOB, GPIO_PIN_14,
             LED_ANODE       
   );
-  uint8_t test = 1;
-  Display_LED7(test);
+  // uint8_t test = 'B';
+
 
   /* USER CODE END 2 */
 
@@ -129,6 +128,34 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+    LCD_Print_data("Suprised in !!");
+  Display_LED7(9);
+  HAL_Delay(100);
+  Display_LED7(8);
+  HAL_Delay(100);
+  Display_LED7(7);
+  HAL_Delay(100);
+  Display_LED7(6);
+  HAL_Delay(100);
+  Display_LED7(5);
+  HAL_Delay(100);
+  Display_LED7(4);
+  HAL_Delay(100);
+  Display_LED7(3);
+  HAL_Delay(100);
+  Display_LED7(2);
+  HAL_Delay(100);
+  Display_LED7(1);
+  HAL_Delay(100);
+  Display_LED7(0);
+  LCD_Write_cmd(0x01);
+  HAL_Delay(100);
+  LCD_Print_data("Fuck You ");
+  LCD_Write_cmd(0xC0);
+  LCD_Print_data("Fargot!!");
+  HAL_Delay(100);
+  LCD_Write_cmd(0x01);
+  HAL_Delay(100);
 
     /* USER CODE BEGIN 3 */
   }

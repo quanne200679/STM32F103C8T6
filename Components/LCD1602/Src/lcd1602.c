@@ -24,8 +24,8 @@ void LCD_Write_Byte(uint8_t data, uint8_t mode){
     HAL_Delay(1);                                 // tạo cạnh xuống
     HAL_GPIO_WritePin(mLCD.PORT_R, mLCD.E, 0);     //
     HAL_Delay(1);
-    HAL_GPIO_WritePin(mLCD.PORT_R, mLCD.E, 1);
-    HAL_Delay(1);
+    //HAL_GPIO_WritePin(mLCD.PORT_R, mLCD.E, 1);
+    //HAL_Delay(1);
 } 
 
 void LCD_Write_data(uint8_t data){
@@ -37,12 +37,13 @@ void LCD_Write_cmd(uint8_t data){
 }
 void LCD_Init(){
   HAL_GPIO_WritePin(mLCD.PORT_R,mLCD.RW,0);
+  HAL_GPIO_WritePin(mLCD.PORT_R, mLCD.E, 0);
   HAL_Delay(50);
   LCD_Write_cmd(0x38);     //Function set (8-bit interface, 2 lines, 5*7 Pixels)
   HAL_Delay(5);  
   LCD_Write_cmd(0x0C);      //Restore
   HAL_Delay(5);
-  LCD_Write_cmd(0x01);
+  LCD_Write_cmd(0x01);      //reset
   HAL_Delay(5);
   LCD_Write_cmd(0x06);
   HAL_Delay(5);
